@@ -21,6 +21,7 @@ public class AboutResource {
 				.data("dev", "Dev > Lucas Volgarini")//
 				.data("list", "List of games:")//
 				.data("tic", "Tic-Tac-Toe")//
-				.data("since", "Since 2020");
+				.data("since", "Since 2020")//
+				.data("git", "Open Source Project on GitHub");
 	}
 }
