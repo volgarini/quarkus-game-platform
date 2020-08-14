@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-deployment
+  labels:
+    app: game
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: game-pod
+  template:
+    metadata:
+      labels:
+        name: game-pod
+        app: game-pod
+    spec:
+      containers:
+        - name: game
+          image: lucas.volgarini/jogo-velha:1.0.0-SNAPSHOT
+          ports:
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: game
