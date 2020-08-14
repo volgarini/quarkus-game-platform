@@ -5,8 +5,12 @@ public class Action {
 	private int turn;
 	private String position;
 	
+	public Action(int turn, String position) {
+		this.turn = turn;
+		this.position = position;
+	}
+	
 	public Action() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public int getTurn() {

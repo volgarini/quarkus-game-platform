@@ -10,7 +10,7 @@ import io.quarkus.test.junit.QuarkusTest;
 class AboutResourceTest {
 
 	@Test
-	void testHelloEndpoint() {
+	void shouldReturnCode200() {
 		given().when().get("/about").then().statusCode(200);
 	}
 
